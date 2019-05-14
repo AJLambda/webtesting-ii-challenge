@@ -35,10 +35,21 @@ class Display extends Component {
     }
   };
 
+  hitHandler = () => {
+    this.setState({
+      balls: 0,
+      strikes: 0
+    });
+  };
+
   render() {
     return (
       <div>
-        <Dashboard strike={this.strikeHandler} ball={this.ballHandler} />
+        <Dashboard
+          strike={this.strikeHandler}
+          ball={this.ballHandler}
+          hit={this.hitHandler}
+        />
         <h1>The Count</h1>
         <div>
           <h3>Strikes: {this.state.strikes}</h3>
