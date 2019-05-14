@@ -3,7 +3,7 @@ import React from "react";
 const Dashboard = props => {
   return (
     <>
-      <h2>Dashboard</h2>
+      <h1>Dashboard</h1>
       <button onClick={props.strike}>Strike</button>
       <button onClick={props.ball}>Ball</button>
       <button onClick={props.foul}>Foul</button>
