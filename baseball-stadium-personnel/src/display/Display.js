@@ -67,8 +67,8 @@ class Display extends Component {
         <h1>Display</h1>
         <h2>The Count:</h2>
         <div>
-          <h3>Strikes: {this.state.strikes}</h3>
-          <h3>Balls: {this.state.balls}</h3>
+          <h3 data-testid="strikes">Strikes: {this.state.strikes}</h3>
+          <h3 data-testid="balls">Balls: {this.state.balls}</h3>
         </div>
       </div>
     );
